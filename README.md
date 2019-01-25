@@ -1,2 +1,2 @@
 # CleanCitations
-Little tool written in Python that finds duplicate citation entries in (large) references databases
+Little tool written in Python that identifies duplicate citation entries in (large) references databases.
