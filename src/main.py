@@ -1,5 +1,9 @@
-from Tkinter import Frame, Tk, BOTH, Text, Menu, END, RIGHT, Y, StringVar, Label, Scrollbar
-import tkFileDialog 
+import sys
+if sys.version_info[0] < 3:
+    raise Exception("Must be using Python 3")
+
+from tkinter import Frame, Tk, BOTH, Text, Menu, END, RIGHT, Y, StringVar, Label, Scrollbar
+from tkinter import filedialog 
 import bibtexparser
 from difflib import SequenceMatcher
 from copy import copy
@@ -59,7 +63,7 @@ class BibTexCleanerGUI(Frame):
     def onOpen(self):
 
         ftypes = [('BibTex files', '*.bib'), ('All files', '*.*')]
-        dlg = tkFileDialog.Open(self, filetypes = ftypes)
+        dlg = filedialog.Open(self, filetypes = ftypes)
         fl = dlg.show()
 
         if fl != '':
