@@ -1,2 +1,5 @@
 # CleanCitations
-Little tool written in Python that identifies duplicate citation entries in (large) references databases.
+Tool that identifies duplicate citation entries in (large) bibtex files. Requires Python 2.7.
+## Dependencies
+* bibtexparser (`pip install bibtexparser`)
+* Levenshtein (`pip install python-Levenshtein`)
